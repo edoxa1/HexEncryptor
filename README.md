@@ -17,4 +17,4 @@ ex: `1 = 0001, 2 = 0002, 26 = 001A`
 ex: `aa bb = 0001[letter separator]0001[word separator]0002[letter separator]0002`
 
 <h2>Getting Started</h2>
-Just open `HexEncrypt.exe` <a src = "https://github.com/edoxa1/HexEncryptor/tree/master/HexEncrypt/bin/Debug">there</a>
+Just open ```HexEncrypt.exe``` <a href = "https://github.com/edoxa1/HexEncryptor/tree/master/HexEncrypt/bin/Debug">there</a>
