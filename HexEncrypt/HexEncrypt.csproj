@@ -7,8 +7,8 @@
         <ProjectGuid>{686639CC-3431-4BF8-ACB2-C2F5498D7BFB}</ProjectGuid>
         <OutputType>Exe</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>BinaryEncrypt</RootNamespace>
-        <AssemblyName>BinaryEncrypt</AssemblyName>
+        <RootNamespace>HexEncrypt</RootNamespace>
+        <AssemblyName>HexEncrypt</AssemblyName>
         <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
     </PropertyGroup>

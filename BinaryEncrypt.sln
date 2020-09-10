@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryEncrypt", "BinaryEncrypt\BinaryEncrypt.csproj", "{686639CC-3431-4BF8-ACB2-C2F5498D7BFB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexEncrypt", "HexEncrypt\HexEncrypt.csproj", "{686639CC-3431-4BF8-ACB2-C2F5498D7BFB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

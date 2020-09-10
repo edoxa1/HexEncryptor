@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BinaryEncrypt
+namespace HexEncrypt
 {
     internal class Program
     {
@@ -16,8 +16,11 @@ namespace BinaryEncrypt
             var isDebugging = Console.ReadLine() == "y";
 
             var encryptedWord =
-                Encryptor.ToBinaryEncryption(wordToEncrypt, letterSeparator, wordSeparator, isDebugging);
+                Encryptor.StringToHexEncryption(wordToEncrypt, letterSeparator, wordSeparator, isDebugging);
             Console.WriteLine($"Word: {wordToEncrypt}\nEncrypted word: {encryptedWord}");
+
+            var decryptedWord = Encryptor.HexEncryptionToString(encryptedWord, letterSeparator, wordSeparator, true);
+            Console.WriteLine(decryptedWord);
         }
     }
 }
