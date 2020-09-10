@@ -36,10 +36,12 @@ namespace HexEncrypt
             hexWords.ForEach(delegate(string word)
             {
                 if (word == String.Empty) return;
+                
                 var hexLetters = word.Split(letterSeparator.ToCharArray()).ToList();
                 hexLetters.ForEach(delegate(string hexLetter)
                 {
                     if (hexLetter == String.Empty) return;
+                    
                     var letterPosition = Convert.ToInt32(hexLetter, 16);
                     var letter = Alphabet.GetAlphabetChar(letterPosition);
                     result += letter;
@@ -48,8 +50,10 @@ namespace HexEncrypt
                     Console.Write($" | {letter}");
                     Console.WriteLine();
                 });
+                
                 result += " ";
             });
+            
             return result;
         }
     }

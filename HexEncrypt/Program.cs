@@ -7,8 +7,6 @@ namespace HexEncrypt
     {
         public static void Main()
         {
-            Console.BackgroundColor = ConsoleColor.Black;
-            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Word you want to encrypt: ");
             var wordToEncrypt = Console.ReadLine();
             Console.Write("Letter separator: ");
@@ -24,10 +22,12 @@ namespace HexEncrypt
                 var isDebugging = Console.ReadLine() == "y";
                 var encryptedWord =
                     Encryptor.StringToHexEncryption(wordToEncrypt, letterSeparator, wordSeparator, isDebugging);
-                Console.WriteLine($"Word: {wordToEncrypt}\nEncrypted word: {encryptedWord}");
+                Console.Write($"Original Word: {wordToEncrypt}  \n");
+                Console.WriteLine($"Encrypted word: {encryptedWord}");
 
-                var decryptedWord = Encryptor.HexEncryptionToString(encryptedWord, letterSeparator, wordSeparator, true);
-                Console.WriteLine(decryptedWord);
+                var decryptedWord = 
+                    Encryptor.HexEncryptionToString(encryptedWord, letterSeparator, wordSeparator, isDebugging);
+                Console.WriteLine($"Decrypted hex: {decryptedWord}");
             }
             else
             {
@@ -38,12 +38,12 @@ namespace HexEncrypt
             }
         }
 
-        public static Boolean CheckSeparators(string letterSeparartor, string wordSeparator)
+        private static Boolean CheckSeparators(string letterSeparator, string wordSeparator)
         {
             // Check if both separators have similar letters.
             
             var result = false;
-            letterSeparartor.ToList().ForEach(c =>
+            letterSeparator.ToList().ForEach(c =>
             {
                 if (!wordSeparator.Contains(c)) return;
                 result = true;
