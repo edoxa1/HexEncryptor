@@ -1,31 +1,31 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography;
 
 namespace BinaryEncrypt
 {
     public class Encryptor
     {
-        public static string ToBinaryEncryption(string word, char charSeparator, char wordSeparator)
+        public static string ToBinaryEncryption(string word, string letterSeparator, string wordSeparator, bool isDebugEnabled)
         {
+            const char emptySpace = ' ';
             var result = "";
-            //Console.WriteLine(Convert.ToString(Alphabet.GetAlphabetPosition(key), 2));
             word.ToList().ForEach(c =>
             {
-                if (c != ' ')
+                if (c != emptySpace)
                 {
-                    var binaryCode = Convert.ToString(Alphabet.GetAlphabetPosition(c), 16);
-                    result += binaryCode.PadLeft(4,'0') + charSeparator;
+                    var charPosition = Alphabet.GetAlphabetPosition(c);
+                    var hexChar = Convert.ToString(charPosition, 16);
+                    result += hexChar.PadLeft(4,'0') + letterSeparator;
+                    if (!isDebugEnabled) return;
                     
-                    Console.Write($"{c} : {Alphabet.GetAlphabetPosition(c)}");
-                    Console.Write($"   | {result}");
+                    Console.Write($"{c} : {charPosition}".PadRight(7, ' '));
+                    Console.Write($" | {hexChar.PadLeft(4,'0')}");
                     Console.WriteLine();
                 }
                 else result += wordSeparator;
             });
             
-            return "";
+            return result;
         }
             
     }
