@@ -1,0 +1,6 @@
+G:\edil\csharp\Projects\BinaryEncrypt\BinaryEncrypt\bin\Debug\BinaryEncrypt.exe
+G:\edil\csharp\Projects\BinaryEncrypt\BinaryEncrypt\bin\Debug\BinaryEncrypt.pdb
+G:\edil\csharp\Projects\BinaryEncrypt\BinaryEncrypt\obj\Debug\BinaryEncrypt.csprojAssemblyReference.cache
+G:\edil\csharp\Projects\BinaryEncrypt\BinaryEncrypt\obj\Debug\BinaryEncrypt.csproj.CoreCompileInputs.cache
+G:\edil\csharp\Projects\BinaryEncrypt\BinaryEncrypt\obj\Debug\BinaryEncrypt.exe
+G:\edil\csharp\Projects\BinaryEncrypt\BinaryEncrypt\obj\Debug\BinaryEncrypt.pdb
