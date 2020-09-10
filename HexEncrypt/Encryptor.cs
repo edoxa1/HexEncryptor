@@ -19,7 +19,7 @@ namespace HexEncrypt
                     result += hexChar.PadLeft(4,'0') + letterSeparator;
                     if (!isDebugEnabled) return;
                     
-                    Console.Write($"{letter} : {charPosition}".PadRight(7, ' '));
+                    Console.Write($"{letter} : {charPosition}".PadRight(7));
                     Console.Write($" | {hexChar.PadLeft(4,'0')}");
                     Console.WriteLine();
                 }
@@ -43,6 +43,10 @@ namespace HexEncrypt
                     var letterPosition = Convert.ToInt32(hexLetter, 16);
                     var letter = Alphabet.GetAlphabetChar(letterPosition);
                     result += letter;
+                    if (!isDebugEnabled) return;
+                    Console.Write($"{hexLetter} : {letterPosition}".PadRight(10, ' '));
+                    Console.Write($" | {letter}");
+                    Console.WriteLine();
                 });
                 result += " ";
             });
