@@ -7,6 +7,7 @@ namespace HexEncrypt
     {
         public static void Main()
         {
+            Console.ResetColor();
             Console.Write("Word you want to encrypt: ");
             var wordToEncrypt = Console.ReadLine();
             Console.Write("Letter separator: ");
