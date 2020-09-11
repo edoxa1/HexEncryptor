@@ -21,12 +21,12 @@ namespace HexEncrypt
             }
         }
 
-        public static int GetAlphabetPosition(char c)
+        public static System.Int32 GetAlphabetPosition(char c)
         {
             var position = EnglishAlphabet.First(x => x.Value == c).Key;
             return position;
         }
-        public static char GetAlphabetChar(int position)
+        public static System.Char GetAlphabetChar(int position)
         {
             var alphabetChar = EnglishAlphabet.First(x => x.Key == position).Value;
             return alphabetChar;

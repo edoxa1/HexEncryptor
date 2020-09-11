@@ -5,7 +5,7 @@ namespace HexEncrypt
 {
     public static class Encryptor
     {
-        public static string StringToHexEncryption(string word, string letterSeparator, string wordSeparator, bool isDebugEnabled)
+        public static String StringToHexEncryption(string word, string letterSeparator, string wordSeparator, bool isDebugEnabled)
         {
             const char emptySpace = ' ';
             const int hexBase = 16;
@@ -29,7 +29,7 @@ namespace HexEncrypt
             return result;
         }
 
-        public static string HexEncryptionToString(string encryptedWord, string letterSeparator, string wordSeparator, bool isDebugEnabled)
+        public static String HexEncryptionToString(string encryptedWord, string letterSeparator, string wordSeparator, bool isDebugEnabled)
         {
             var result = "";
             var hexWords = encryptedWord.Split(wordSeparator.ToCharArray()).ToList();

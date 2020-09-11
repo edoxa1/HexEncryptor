@@ -36,6 +36,8 @@ namespace HexEncrypt
                 Console.WriteLine("Separators have same letters. Please, enter correct separators");
                 Main();
             }
+
+            Console.ReadKey();
         }
 
         private static Boolean CheckSeparators(string letterSeparator, string wordSeparator)
