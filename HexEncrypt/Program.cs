@@ -28,6 +28,8 @@ namespace HexEncrypt
                 var decryptedWord = 
                     Encryptor.HexEncryptionToString(encryptedWord, letterSeparator, wordSeparator, isDebugging);
                 Console.WriteLine($"Decrypted hex: {decryptedWord}");
+                
+                Console.ReadKey();
             }
             else
             {
