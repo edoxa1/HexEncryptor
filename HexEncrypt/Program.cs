@@ -28,6 +28,8 @@ namespace HexEncrypt
                 var decryptedWord = 
                     Encryptor.HexEncryptionToString(encryptedWord, letterSeparator, wordSeparator, isDebugging);
                 Console.WriteLine($"Decrypted hex: {decryptedWord}");
+                
+                Console.ReadKey();
             }
             else
             {
@@ -36,7 +38,6 @@ namespace HexEncrypt
                 Console.WriteLine("Separators have same letters. Please, enter correct separators");
                 Main();
             }
-            Console.ReadKey();
         }
 
         private static Boolean CheckSeparators(string letterSeparator, string wordSeparator)
